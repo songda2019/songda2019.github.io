@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://songda.live/contact/index.html</loc>
+    
+    <lastmod>2019-12-30T12:30:52.096Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://songda.live/post/46d5f113.html</loc>
     
     <lastmod>2019-12-30T12:25:54.563Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>http://songda.live/about/index.html</loc>
     
     <lastmod>2019-12-30T12:08:22.089Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://songda.live/contact/index.html</loc>
-    
-    <lastmod>2019-12-30T12:08:22.086Z</lastmod>
     
   </url>
   
