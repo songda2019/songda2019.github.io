@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://songda.live/"/>
-  <updated>2019-12-30T12:25:54.563Z</updated>
+  <updated>2019-12-30T12:41:15.710Z</updated>
   <id>http://songda.live/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python初始</title>
+    <link href="http://songda.live/post/undefined.html"/>
+    <id>http://songda.live/post/undefined.html</id>
+    <published>2019-12-30T12:38:56.000Z</published>
+    <updated>2019-12-30T12:41:15.710Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;python介绍&quot;&gt;&lt;a href=&quot;#python介绍&quot; class=&quot;headerlink&quot; title=&quot;python介绍&quot;&gt;&lt;/a&gt;python介绍&lt;/h2&gt;&lt;p&gt;python的创始⼈为吉多·范罗苏姆（Guido van
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>一首小诗</title>
