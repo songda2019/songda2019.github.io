@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>一首小诗</title>
+      <link href="/post/46d5f113.html"/>
+      <url>/post/46d5f113.html</url>
+      
+        <content type="html"><![CDATA[<p>打草机的声音嗡嗡作响<br>空气中夹杂着泥土和草的气息<br>偶尔一阵风吹来<br>淡淡的花香飘过<br>我想，那是你<br>又希望那不是你</p><p>远处的群山连绵起伏<br>在蔚蓝色的天空的衬托下形成一道分界线<br>万里无云的日子里<br>太阳毫无保留地洒向大地<br>我想，那是你<br>又希望那不是你</p><p>人群穿梭不息<br>向着我或是离开我<br>当这城市又一次陷入寂静中时<br>回想那人群中的身影<br>我想，向着我的是你<br>又希望离开我的不是你</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 思念 </tag>
+            
+            <tag> 爱情 </tag>
+            
+            <tag> 诗 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

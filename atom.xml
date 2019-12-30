@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>达达的博客</title>
+  
+  <subtitle>达达的博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://songda.live/"/>
+  <updated>2019-12-30T12:25:54.563Z</updated>
+  <id>http://songda.live/</id>
+  
+  <author>
+    <name>宋达</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一首小诗</title>
+    <link href="http://songda.live/post/46d5f113.html"/>
+    <id>http://songda.live/post/46d5f113.html</id>
+    <published>2019-12-21T11:02:03.000Z</published>
+    <updated>2019-12-30T12:25:54.563Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;打草机的声音嗡嗡作响&lt;br&gt;空气中夹杂着泥土和草的气息&lt;br&gt;偶尔一阵风吹来&lt;br&gt;淡淡的花香飘过&lt;br&gt;我想，那是你&lt;br&gt;又希望那不是你&lt;/p&gt;
+&lt;p&gt;远处的群山连绵起伏&lt;br&gt;在蔚蓝色的天空的衬托下形成一道分界线&lt;br&gt;万里无云的日子里&lt;br&gt;太阳毫无保留地洒向大地&lt;
+        
+      
+    
+    </summary>
+    
+      <category term="生活" scheme="http://songda.live/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="思念" scheme="http://songda.live/tags/%E6%80%9D%E5%BF%B5/"/>
+    
+      <category term="爱情" scheme="http://songda.live/tags/%E7%88%B1%E6%83%85/"/>
+    
+      <category term="诗" scheme="http://songda.live/tags/%E8%AF%97/"/>
+    
+  </entry>
+  
+</feed>
