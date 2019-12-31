@@ -6,10 +6,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="分类, 生活，学习，进步">
+    <meta name="keywords" content="python发送邮件, 生活，学习，进步">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
-    <meta name="description" content="分类 | 达达的博客">
+    <meta name="description" content="普通发送邮件使用email模块和stmplib模块，内容比较固定，配好了即可实现，代码如下
+一、普通邮箱发送# -*- coding:utf-8-*-
+import smtplib
+from email.mime.multipart imp">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>分类 | 达达的博客</title>
+    <title>python发送邮件 | 达达的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -599,127 +602,643 @@
 
 </header>
 
-        <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                <!-- 
-                    达达的博客
-                 -->
-                
-                    分类
-                
-            </div>
+        
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
-            <div class="description center-align">
-                
-                    <!-- 不积跬步无以至千里，不积小流无以成江河 -->
-                    <span id="jinrishici-sentence">正在加载今日诗词...</span>
-                
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        python发送邮件
+                    </div>
+                </div>
             </div>
-            
-            
         </div>
     </div>
 </div>
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- shw2018 洪卫  modify 2019.08.15-->
+<!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/python/" target="_blank">
+                                <span class="chip bg-color">python</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/生活/" class="post-category" target="_blank">
+                                生活
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2019-12-31
+                </div>
+
+                <div class="post-author info-break-policy">
+                    <i class="fa fa-user-o fa-fw"></i>作者:&nbsp;&nbsp;
+                    
+                        达达
+                    
+                </div>
+
+                
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
+                        862
+                    </div>
+                    
+
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                        4 分
+                    </div>
+                    
+                
+                
+                
+                        <span id="busuanzi_container_site_pv" style='display:none'></span>
+                        <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv" ></span>
+    
+                
+
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="普通发送邮件"><a href="#普通发送邮件" class="headerlink" title="普通发送邮件"></a>普通发送邮件</h2><p>使用email模块和stmplib模块，内容比较固定，配好了即可实现，代码如下</p>
+<h3 id="一、普通邮箱发送"><a href="#一、普通邮箱发送" class="headerlink" title="一、普通邮箱发送"></a>一、普通邮箱发送</h3><pre><code># -*- coding:utf-8-*-
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText   ## 邮件正文
+from email.mime.application import MIMEApplication
+from email.mime.image import MIMEImage
+
+
+# 收件人
+to_lst = ["xxx@189.cn","xxx@163.com"]
+
+# 发件人
+sender = "xxx@163.com"
+
+# 抄送人
+cc_lst = ["xxx@189.cn","xxxa@163.com"]
+
+# 准备email
+email = MIMEMultipart()
+email['Subject'] = "console日常巡检" #标题
+email['From'] = sender
+email['To'] = ",".join(cc_lst) # 发送
+email['Cc'] = ",".join(to_lst) #抄送
+
+# 邮件正文
+text = MIMEText("这是邮箱内容",_subtype="plain",_charset="utf-8")
+text1 = MIMEText("我的图片是:&lt;img src='cid:jay'/&gt;",_subtype="html",_charset="utf-8")
+email.attach(text)
+# 发送附件
+fu1 = MIMEApplication(open("hello_word.txt",mode='rb').read())
+fu1.add_header("Content-disposition","attachment",filename = "hello_word.txt")
+email.attach(fu1)
+
+
+# 图片
+tu = MIMEImage(open("o_kj.gif",mode='rb').read())
+tu.add_header("Content-ID","jay") #对应cid
+email.attach(tu)
+
+#发送邮件
+smtp = smtplib.SMTP()
+#连接smtp服务器
+smtp.connect("smtp.163.com") ## 填入你选择的smtp服务
+# 填写用户名密码，密码是smtp的授权吗
+smtp.login(sender,"xxx")
+smtp.sendmail(sender,to_lst,email.as_string())
+print("ok")</code></pre><h3 id="二、写函数发送邮箱"><a href="#二、写函数发送邮箱" class="headerlink" title="二、写函数发送邮箱"></a>二、写函数发送邮箱</h3><pre><code>import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.application import MIMEApplication
+from email.mime.image import MIMEImage
+
+def send_mail(username,password,recv,cc,title,content,mail_host='smtp.163.com',port=25):
+    """
+    发送邮件函数默认使用的是163smtp
+    :param username: 邮箱账号 例如:xxx@163.com
+    :param password: smtp授权密码: 例如：djsjdiasd
+    :param recv: 收件人地址，多账号用逗号分开
+    :param cc: 抄送人邮箱地址，多人要用逗号分开
+    :param title: 邮箱标题
+    :param content: 邮箱内容
+    :param mail_host: 邮箱服务器
+    :param port: 默认的smtp端口 25
+    :return:
+    """
+    email = MIMEMultipart()
+    email['Subject'] = title
+    email['From'] = username
+    email['To'] = ",".join(recv)
+    email['Cc'] = ",".join(cc)
+    ## 邮箱正文
+    text = MIMEText(content,_subtype="plain",_charset="utf-8")
+    email.attach(text)
+    ## 发送邮件
+    smtp = smtplib.SMTP()
+    ## 连接smtp服务器
+    smtp.connect(mail_host)
+    ## 登录stmp发送邮件
+    smtp.login(username,password)
+    smtp.sendmail(recv,cc,email.as_string())
+    print("ok")
+
+
+email_user = "xxx@163.com"
+email_pwd = "xxx"
+recv_lst = ["xxx@163.com"]
+cc_lst = ["xxg@189.cn","xxx@163.com"]
+title = '测试邮箱标题'
+content = '这是邮箱内容'
+send_mail(email_user,email_pwd,recv_lst,cc_lst,title,content)</code></pre><h3 id="三、写一个发送邮箱的类"><a href="#三、写一个发送邮箱的类" class="headerlink" title="三、写一个发送邮箱的类"></a>三、写一个发送邮箱的类</h3><pre><code>import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.application import MIMEApplication
+from email.mime.image import MIMEImage
+
+class SendMail:
+    def __init__(self,username,passwd,recv,cc,title,content,file=None,images=None,
+                 email_host='smtp.163.com',port=25):
+        self.username = username
+        self.passwd = passwd
+        self.recv = recv
+        self.cc = cc
+        self.title = title
+        self.content = content
+        self.file = file
+        self.images = images
+        self.email_host = email_host
+        self.port = port
+    def send_mail(self):
+        email = MIMEMultipart()
+        if self.file:
+            att = MIMEApplication(open(self.file,mode='rb').read())
+            att.add_header("Content-dispostion","attachment",filename=self.file)
+            email.attach(att)
+        email.attach(MIMEText(self.content,_subtype="plain",_charset="utf-8")) ##邮箱正文内容
+        email['Subject'] = self.title  # 标题
+        email['From'] = self.username
+        email['To'] = ",".join(self.recv)  # 发送
+        email['Cc'] = ",".join(self.cc)  # 抄送
+        self.smtp = smtplib.SMTP()
+        self.smtp.connect(self.email_host,self.port)
+        # 发送邮件到服务器的对象
+        self.smtp.login(self.username,self.passwd)
+        try:
+            self.smtp.sendmail(self.username,self.recv,email.as_string())
+        except Exception as e:
+            print("邮箱发送失败。。",e)
+        else:
+            print("邮箱发送成功")
+    def __del__(self):
+        self.smtp.quit()
+
+
+if __name__ == '__main__':
+    email_user = "xx@163.com"
+    email_pwd = "xxx" #注意这里面是smtp授权密码
+    recv_lst = ["xxx",] #要发送邮箱的地址
+    cc_lst = ["dxxx@189.cn", "xxx@163.com"] #抄送地址
+    title = 'python测试邮箱'
+    content = '这是邮箱内容python'
+    file = ''  #附件文档
+    image = '' #附件图片
+
+    mail = SendMail(
+        username=email_user,passwd=email_pwd,recv=recv_lst,cc=cc_lst,
+        title=title,content=content
+        )
+    mail.send_mail()</code></pre><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            
+            
+            
+            <div class="reprint1">
+                <p>
+                    <span class="reprint1-tip">
+                        <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
+                    </span>
+                    <a href="http://songda.live" class="b-link-green">达达的博客</a>
+                    <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
+                    <a href="/post/46d5f114.html" class="b-link-green">python发送邮件</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/post/46d5f114.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="python发送邮件">
+                        
+                        <span class="card-title">python发送邮件</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            普通发送邮件使用email模块和stmplib模块，内容比较固定，配好了即可实现，代码如下
+一、普通邮箱发送# -*- coding:utf-8-*-
+import smtplib
+from email.mime.multipart imp
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-31
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/生活/" class="post-category" target="_blank">
+                                    生活
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python/" target="_blank">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/post/undefined.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="python初始">
+                        
+                        <span class="card-title">python初始</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            python介绍python的创始⼈为吉多·范罗苏姆（Guido van Rossum）。1989年的圣诞节期间，吉多·范罗苏姆为了在阿姆斯特丹打发时间，决⼼开发⼀个新的脚本解释程序，作为ABC语⾔的⼀种继承。最新的TIOBE排⾏榜，Pyt
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-30
+                            </span>
+                        <span class="publish-author">
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
 <script>
-// 每天切换 banner 图.  Switch banner image every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 达达的博客<br />'
+            + '作者: 宋达<br />'
+            + '链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
 </script>
 
 
     </div>
-</div>
-
-<main class="content">
-
-    
-
-<div id="category-cloud" class="container chip-container">
-    <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">
-                <i class="fa fa-bookmark"></i>&nbsp;&nbsp;文章分类
-            </div>
-            <div class="tag-chips">
-                
-                
-                
-                <a href="/categories/生活/" title="生活: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F9EBEA;">生活
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-            </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
         </div>
     </div>
 </div>
 
-    
-    <style type="text/css">
-    #category-radar {
-        width: 100%;
-        height: 360px;
-    }
-</style>
+<!-- TOC 悬浮按钮. -->
 
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="category-radar" class="card-content"></div>
-    </div>
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
 </div>
 
-<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
-<script type="text/javascript">
-    let radarChart = echarts.init(document.getElementById('category-radar'));
 
-    
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h1, h2, h3, h4, h5'
+        });
 
-    let option = {
-        title: {
-            left: 'center',
-            text: '文章分类雷达图',
-            textStyle: {
-                fontWeight: 500,
-                fontSize: 22
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
             }
-        },
-        tooltip: {},
-        radar: {
-            name: {
-                textStyle: {
-                    color: '#3C4858'
-                }
-            },
-            indicator: [{"name":"生活","max":4}],
-            nameGap: 5,
-            center: ['50%','55%'],
-            radius: '66%'
-        },
-        series: [{
-            type: 'radar',
-            color: ['#3ecf8e'],
-            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-            data : [
-                {
-                    value : [2],
-                    name : '文章分类数量'
-                }
-            ]
-        }]
-    };
+        });
 
-    radarChart.setOption(option);
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
 </script>
     
 
 </main>
+
 
         <footer class="page-footer bg-color">
     <div class="container row center-align">

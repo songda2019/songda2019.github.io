@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://songda.live/"/>
-  <updated>2019-12-31T06:46:07.976Z</updated>
+  <updated>2019-12-31T06:56:46.199Z</updated>
   <id>http://songda.live/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>python发送邮件</title>
-    <link href="http://songda.live/post/undefined.html"/>
-    <id>http://songda.live/post/undefined.html</id>
+    <link href="http://songda.live/post/46d5f114.html"/>
+    <id>http://songda.live/post/46d5f114.html</id>
     <published>2019-12-31T06:45:24.000Z</published>
-    <updated>2019-12-31T06:46:07.976Z</updated>
+    <updated>2019-12-31T06:56:46.199Z</updated>
     
     <summary type="html">
     
@@ -36,6 +36,10 @@
     
     </summary>
     
+      <category term="生活" scheme="http://songda.live/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="python" scheme="http://songda.live/tags/python/"/>
     
   </entry>
   
