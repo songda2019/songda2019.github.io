@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://songda.live/"/>
-  <updated>2019-12-30T12:41:15.710Z</updated>
+  <updated>2019-12-31T06:23:38.000Z</updated>
   <id>http://songda.live/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://songda.live/post/undefined.html"/>
+    <id>http://songda.live/post/undefined.html</id>
+    <published>2019-12-31T06:23:38.000Z</published>
+    <updated>2019-12-31T06:23:38.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;普通发送邮件&quot;&gt;&lt;a href=&quot;#普通发送邮件&quot; class=&quot;headerlink&quot; title=&quot;普通发送邮件&quot;&gt;&lt;/a&gt;普通发送邮件&lt;/h2&gt;&lt;p&gt;使用email模块和stmplib模块，内容比较固定，配好了即可实现，代码如下&lt;/p&gt;
+&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>python初始</title>
